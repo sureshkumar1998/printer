@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bio Data</title>
+</head>
+<h1 style="text-align:center ;">Data</h1><br>
+<body>
+<style>
+html,body{
+    background-image: url('../static/images/SM.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+</style>
+<table>
+    <tr>
+        <td>NAME</td><td>{{B}}</td>
+    </tr>
+    <tr>
+        <td>EMPLOYEE</td><td>{{C}}</td>
+    </tr>
+    <tr>
+        <td>TEAM</td><td>{{D}}</td>
+    </tr>
+</table>
+<center><img src="{{url_for('.static',filename = pic1)}}" width="300" height="300"></center>
+<form action="/img" , method="post">
+<input type="submit"value="back">
+</form>
+</body>
+</html>
